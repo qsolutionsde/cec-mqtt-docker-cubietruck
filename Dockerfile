@@ -1,5 +1,6 @@
 FROM arm32v7/debian
 
+RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git python3 python3-pip python3-dev libx11-6 libxrandr2
 
 # Clone the conf files into the docker container
